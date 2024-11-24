@@ -1,0 +1,19 @@
+{
+  "require": {
+    "php": ">= 8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpstanGenerics\\": "src/"
+    },
+    "classmap": [
+      "src/"
+    ]
+  },
+  "scripts": {
+    "phpstan": "vendor/bin/phpstan analyse -l 10 src"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.0"
+  }
+}
